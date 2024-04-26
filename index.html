@@ -19,28 +19,15 @@
 
   <div id="app">
 
-    <template id="movie-template">
-      <article>
-        <h2>TITLE GOES HERE</h2>
-        
-        <img src="IMAGE FILENAME GOES HERE">
-        <p>
-          DESCRIPTION GOES HERE
-        </p>
 
-        <div class="actions">
-          <a class="details" href="#">See Details</a>
-          <a class="like">&hearts; <span>0</span></a>
-        </div>
-      </article>
-  </template>
 
   </div>
 
   <script type="text/babel">
     const appElement = document.getElementById('app');
-    const appRoot = ReactDOM.createRoot(appElement);
-    appRoot.render(<App />);
+    const appRoot = ReactDOM.createRoot(appElement); // React creates its own DOM to represent what's on the page, doesn't directly talk to browser. 
+    appRoot.render(<App />); // renders element called app, in react can invent own HTML elements. Capital shows that its a component that we are yet to define. 
+    // This is not real javascript, but the Babel version. The < sign, means this is the start of HTML and don't need quotation marks. It's called JSX. 
   </script>
 
 </body>
